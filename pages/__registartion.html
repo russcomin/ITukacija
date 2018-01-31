@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITukacija</title>
+	<link rel="stylesheet" type="text/css" href="../public/stylesheets/__1.css">
+</head>
+<body>
+	<div id="container">
+		<div class="left">
+			<div class="title">
+				<p>Kreiranje <br> naloga</p>
+				<p>KORACI</p>
+			</div><!-- end titile -->
+			<div class="nav-box fix" id="active">
+				<img src="../public/stylesheets/assets/icons/003-locked.svg">
+				<p>Informacije</p>
+			</div><!-- end nav-box -->
+			<div class="nav-box">
+				<img src="../public/stylesheets/assets/icons/002-list.svg">
+				<p>Provera</p>
+			</div><!-- end nav-box -->
+			<div class="nav-box">
+				<img src="../public/stylesheets/assets/icons/001-rocket-ship.svg">
+				<p>Registracija</p>
+			</div><!-- end nav-box -->			
+		</div><!-- end left -->
+		<div class="right">
+			<p>Kreiranje naloga</p>
+			<p>KORAK 1</p>
+			<p>Molimo vas da popunite sva polja radi bolje provere takodje <br>
+			zapamtite unete informacije</p>
+			<div class="form">
+				<div class="form-holder">	
+					<div class="field first-field">
+						<h2>KORISNICKO IME</h2>
+						<input type="text" id="korisnicko_ime"
+						placeholder="Unesite vase ime...">
+					</div><!-- end field -->
+					<div class="field second-field">
+						<h2>LOZINKA</h2>
+						<input type="password" id="sifra"
+						placeholder="Unesite vasu sifru...">
+					</div><!-- end field -->
+					<input type="button" id="submit_login" value="NASTAVI">
+				</div><!-- end form-holder -->
+			</div><!-- end form -->
+			<div class="image">
+				<img src="../public/stylesheets/assets/icons/picture.svg">
+				<div class="text">
+					<h3>DODAJ SLIKU</h3>
+				</div>
+				<input type="file" id="imger">
+			</div><!-- end image -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<script src="../views/image-upload.js"></script>
+</body>
+</html>
