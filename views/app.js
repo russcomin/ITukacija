@@ -1,1 +1,1 @@
-ECHO is on.
+console.log('app ready');

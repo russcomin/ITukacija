@@ -1,1 +1,40 @@
-ECHO is on.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITukacija</title>
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+</head>
+<body>
+	<div id="container">
+		<div class="left">
+			<p>TVOJ PUT DO IT <br>
+			EDUKACIJE</p>
+			<p>ITukacija je platforma za ucenje Informacionih <br>
+			Tehnologija na jedan sasvim drugi nacin</p>
+			<input type="button" id="napravi_nalog" value="NAPRAVI NALOG">
+		</div><!-- end left -->
+		<div class="right">
+			<div class="form">
+				<div class="form-holder">
+					<div class="info"><p>Molimo vas da popunite polja ispod kako <br>
+					biste pristupili vasem nalogu</p>
+					</div><!-- end info -->
+					<div class="field first-field">
+						<p>KORISNICKO IME</p>
+						<input type="text" id="korisnicko_ime"
+						placeholder="Unesite vase ime...">
+					</div><!-- end field -->
+					<div class="field second-field">
+						<p>LOZINKA</p>
+						<input type="password" id="lozinka"
+						placeholder="Unesite vasu lozinku...">
+					</div><!-- end field -->
+					<input type="button" id="submit_login" value="PRIJAVI SE">
+				</div><!-- end form-holder -->
+			</div><!-- end form -->
+		</div><!-- end right -->	
+	</div><!-- end container -->
+	<!--Scripts-->
+	<script src="views/app.js"></script>
+</body>
+</html>
