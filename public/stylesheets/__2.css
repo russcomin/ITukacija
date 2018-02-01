@@ -87,18 +87,18 @@ input:focus { outline: none; }
     color: #cfcfcf;
     letter-spacing: 2px;
     margin-left: 32px;
-    margin-top: 37px;
+    margin-top: 45px;
 }
 
 .fix {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #active {
     opacity: 1;
     width: 158px;
     border-right: 2px solid #5abd78;
-    background-color: #ededed;
+    background-color: #f6f6f6;
 }
 
 #active img {
@@ -169,4 +169,46 @@ input:focus { outline: none; }
     margin-left: 50px;
     background-color: white;    
     margin-top: 30px;
+    text-align: center;
+}
+
+#image-holder {
+	width: 140px;
+	height: 140px;
+	background-color: #ededed;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 38px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form h2 {
+	font-family: Roboto-Regular;
+	font-size: 15px;
+	color: #7d7d7d;
+	letter-spacing: 2.3px;
+	margin-top: 30px;
+}
+
+#submit_login {
+    width: 137px;
+    height: 46px;
+    background-color: #4fba6f;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #40985b;
+    font-family: Roboto-Bold;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    color: white;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+#submit_login:hover {
+    transition: .4s;
+    opacity: .8;
+    border: none;
 }
