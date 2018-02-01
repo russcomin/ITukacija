@@ -27,7 +27,7 @@ let pw,
 	getpw = localStorage.getItem('password');
 
 	if (pw == getpw) {
-		document.location = "app.html"
+		document.location = "../pages/app/app.html"
 	}else {
 		error.innerHTML = ActErr;
 		openModal();
