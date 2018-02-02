@@ -6,6 +6,7 @@
 	float: left;
 	border-bottom: 1.4px solid #dfdfdf;
 	position: fixed;
+	z-index: 20;
 }
 
 .current-name {

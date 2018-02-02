@@ -50,3 +50,17 @@ button:focus { outline: none; }
     background: white;
     border: 1px solid #dfdfdf;
 }
+
+#menu {
+    width: 777px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #d7d7d7;
+    position: absolute; 
+    top: 50px;
+    right: 1px;
+    display: none;
+    border-left: none;
+    border-right: none;
+    z-index: 20;
+}
