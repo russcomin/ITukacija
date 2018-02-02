@@ -58,7 +58,7 @@ button:focus { outline: none; }
     border: 1px solid #d7d7d7;
     position: absolute; 
     top: 50px;
-    right: 1px;
+    left: 247px;
     display: none;
     border-left: none;
     border-right: none;

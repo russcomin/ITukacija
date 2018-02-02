@@ -123,10 +123,9 @@
 }
 
 .fix-button:hover {
-	transition: .4s;
-	border: 1px solid #d7d7d7;
-	background: none;
-	color: #d7d7d7;
+	background-color: #d7d7d7;
+	border: none;
+	color: white;
 }
 
 #menu {
