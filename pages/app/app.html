@@ -3,6 +3,9 @@
 <head>
 	<title>ITukacija</title>
 	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/left-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/right-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/reset.css">
 </head>
 <body>
 	<div id="container">
@@ -17,19 +20,19 @@
 			</div><!-- end level -->
 			<div class="nav">
 				<h2>MENI</h2>
-				<div class="field first" id="active">
+				<div class="field first kontrolna" id="active">
 					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
 					<h4>Kontrolna Tabla</h4>
 				</div><!-- end field -->
-				<div class="field non-active">
+				<div class="field non-active ucionice">
 					<img src="../../public/stylesheets/assets/icons/menu/002-tabs.svg">
 					<h4>Ucionice</h4>
 				</div><!-- end field -->
-				<div class="field non-active">
+				<div class="field non-active aktivnosti">
 					<img src="../../public/stylesheets/assets/icons/menu/003-newspaper.svg">
 					<h4>Aktivnosti</h4>
-				</div><!-- end field -->
-				<div class="field non-active">
+				</div><!-- end field --> 
+				<div class="field non-active zadaci">
 					<img src="../../public/stylesheets/assets/icons/menu/001-network.svg">
 					<h4>Zadaci</h4>
 				</div><!-- end field -->
@@ -103,5 +106,6 @@
 		</div><!-- end right -->
 	</div><!-- end container -->
 	<script src="../../views/controller.js"></script>
+	<script src="../../views/router.js"></script>
 </body>
 </html>

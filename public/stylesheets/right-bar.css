@@ -1,0 +1,83 @@
+
+.header {
+	width: 777px;
+	height: 55px;
+	background: white;
+	float: left;
+	border-bottom: 1.4px solid #dfdfdf;
+	position: fixed;
+}
+
+.current-name {
+	width: 140px;
+	height: 55px;
+	float: left;
+}
+
+.used-h {
+	font-size: 11px;
+	font-family: Roboto-Regular;
+	color: #e0e0e0;
+	line-height: 55px;
+	margin-left: 20px;
+	letter-spacing: 1.4px;
+}
+
+.first-h {
+	color: #c1c1c1;
+}
+
+.user {
+	width: 250px;
+	height: 55px;
+	float: right;
+}
+
+#image-holder {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #2ecc71;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 45px;
+	margin-top: 9.5px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info {
+	width: 160px;
+	height: 55px;
+	float: right;
+}
+
+.user h2 {
+	font-family: Roboto-Regular;
+	font-size: 11px;
+	color: #6b6b6b;
+	letter-spacing: 1.2px;
+	vertical-align: middle;
+	display: inline-block;	
+	margin-top: 15px;
+}
+
+.user p {
+	font-family: Roboto-Bold;
+	font-size: 9px;
+	color: #2ecc71;
+	letter-spacing: 1.1px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.arrow {
+	width: 17px;
+	height: 12px;
+	float: right;
+	margin-right: 30px;
+	opacity: .6;
+	cursor: pointer;
+	margin-top: -5px;
+}

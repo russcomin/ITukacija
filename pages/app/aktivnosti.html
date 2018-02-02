@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITukacija</title>
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/aktivnosti.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/left-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/right-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/reset.css">
+</head>
+<body>
+	<div id="container">
+		<div class="left">
+			<div class="level">
+				<h2>NIVO</h2>
+				<div class="circle">
+					<div class="inside"></div>
+					<h3>1</h3>
+				</div><!-- end circle -->
+				<h4>POCETNIK</h4>
+			</div><!-- end level -->
+			<div class="nav">
+				<h2>MENI</h2>
+				<div class="field first non-active kontrolna">
+					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
+					<h4>Kontrolna Tabla</h4>
+				</div><!-- end field -->
+				<div class="field ucionice non-active">
+					<img src="../../public/stylesheets/assets/icons/menu/002-tabs.svg">
+					<h4>Ucionice</h4>
+				</div><!-- end field -->
+				<div class="field aktivnosti" id="active">
+					<img src="../../public/stylesheets/assets/icons/menu/003-newspaper.svg">
+					<h4>Aktivnosti</h4>
+				</div><!-- end field -->
+				<div class="field non-active zadaci">
+					<img src="../../public/stylesheets/assets/icons/menu/001-network.svg">
+					<h4>Zadaci</h4>
+				</div><!-- end field -->
+			</div><!-- end nav -->
+		</div><!-- end left -->
+		<div class="right">
+			<div class="header">
+				<div class="current-name">
+					<h3 class="used-h first-h">Aktivnosti</h3>
+				</div><!-- end cn -->
+				<div class="user">
+					<div id="image-holder">
+					</div><!-- end image holder -->
+					<div class="info">
+						<h2 id="Kname">Korisnicko Ime</h2><br>
+						<p>ONLINE</p>
+						<img class="arrow" src="../../public/stylesheets/assets/icons/down-arrow.svg">
+					</div><!-- end info -->
+				</div><!-- end user -->
+			</div><!-- end header -->
+			<div class="content">
+				<div class="blog-content box">
+					<div class="blog-header">
+						<h2>KAKO POSTATI PROGRAMER</h2>
+						<h3>by Jovan belic | 2 / 2 / 2018</h3>
+					</div><!-- end header -->
+					<div class="blog-text">
+						<h2>Ko je i sta radi programer?</h2>
+						<p>
+							Programer je zanimanje koje uključuje zadavanje <br>
+							niza instrukcija u formaliziranom programskom <br>
+							jeziku koji se koristi na računarima koji u ovisnosti<br> o
+							sadržaju instrukcije obavlja neku radnju.
+						</p>
+						<h2>Koji programski jezik nauciti?</h2>
+						<p>
+							PHP je jednostavan a moćan programski jezik za <br>
+							izradu Internet programa. Najtraženiji je i <br> najpopularniji 
+							programski jezik za programiranje Internet sajtova. 
+						</p>						
+					</div><!-- end blog-text -->
+				</div><!-- end box -->
+			<div class="illustration box">
+				<img src="../../public/stylesheets/assets/blog/post-1.png">
+				<h3>PREDNOSTI</h3>
+				<img class="blog-icon" src="../../public/stylesheets/assets/icons/wallet.svg">
+				<p><span>$1200<br></span>
+				PROSECNA PLATA</p>
+				<img class="blog-icon" src="../../public/stylesheets/assets/icons/calendar.svg">
+				<p><span>4h-8h<br></span>
+				FLEKSIBALN RAD</p>				
+			</div>
+			</div><!-- end content -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<script src="../../views/controller.js"></script>
+	<script src="../../views/router.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITukacija</title>
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/zadaci.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/left-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/right-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/reset.css">
+</head>
+<body>
+	<div id="container">
+		<div class="left">
+			<div class="level">
+				<h2>NIVO</h2>
+				<div class="circle">
+					<div class="inside"></div>
+					<h3>1</h3>
+				</div><!-- end circle -->
+				<h4>POCETNIK</h4>
+			</div><!-- end level -->
+			<div class="nav">
+				<h2>MENI</h2>
+				<div class="field first non-active kontrolna">
+					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
+					<h4>Kontrolna Tabla</h4>
+				</div><!-- end field -->
+				<div class="field ucionice non-active">
+					<img src="../../public/stylesheets/assets/icons/menu/002-tabs.svg">
+					<h4>Ucionice</h4>
+				</div><!-- end field -->
+				<div class="field aktivnosti non-active">
+					<img src="../../public/stylesheets/assets/icons/menu/003-newspaper.svg">
+					<h4>Aktivnosti</h4>
+				</div><!-- end field -->
+				<div class="field zadaci" id="active">
+					<img src="../../public/stylesheets/assets/icons/menu/001-network.svg">
+					<h4>Zadaci</h4>
+				</div><!-- end field -->
+			</div><!-- end nav -->
+		</div><!-- end left -->
+		<div class="right">
+			<div class="header">
+				<div class="current-name">
+					<h3 class="used-h first-h">Zadaci</h3>
+				</div><!-- end cn -->
+				<div class="user">
+					<div id="image-holder">
+					</div><!-- end image holder -->
+					<div class="info">
+						<h2 id="Kname">Korisnicko Ime</h2><br>
+						<p>ONLINE</p>
+						<img class="arrow" src="../../public/stylesheets/assets/icons/down-arrow.svg">
+					</div><!-- end info -->
+				</div><!-- end user -->
+			</div><!-- end header -->
+			<div class="content">
+				<div class="task-card box">
+					<div class="card-header">
+						<img src="../../public/stylesheets/assets/icons/003-html-5.svg">
+						<h3>HTML 5</h3>
+						<h2>TAGOVI</h2>
+					</div><!-- end card-header-->
+					<div class="card-content">
+						<p>Ovaj zadatak proverava <br>
+						vase znanje iz HTML5. <br>
+						Sa posebnim akcentom <br>
+						na tagovima</p>
+						<button class="task-button">URADI</button>
+					</div><!-- end card-content -->
+				</div><!-- end task-card -->
+				<div class="task-card box">
+					<div class="card-header">
+						<img src="../../public/stylesheets/assets/icons/002-css-3.svg">
+						<h3>CSS 3</h3>
+						<h2>SELEKTORI</h2>
+					</div><!-- end card-header-->
+					<div class="card-content">
+						<p>Ovaj zadatak proverava <br>
+						vase znanje iz CSS3. <br>
+						Sa posebnim akcentom <br>
+						na selektorima</p>
+						<button class="task-button fix-button">URADI</button>
+					</div><!-- end card-content -->
+				</div><!-- end task-card -->
+				<div class="task-card box">
+					<div class="card-header">
+						<img src="../../public/stylesheets/assets/icons/003-html-5.svg">
+						<h3>HTML 5</h3>
+						<h2>LINKOVI</h2>
+					</div><!-- end card-header-->
+					<div class="card-content">
+						<p>Ovaj zadatak proverava <br>
+						vase znanje iz HTML5. <br>
+						Sa posebnim akcentom <br>
+						na linkovima</p>
+						<button class="task-button fix-button">URADI</button>
+					</div><!-- end card-content -->
+				</div><!-- end task-card -->
+				<div class="task-card box">
+					<div class="card-header">
+						<img src="../../public/stylesheets/assets/icons/003-html-5.svg">
+						<h3>HTML 5</h3>
+						<h2>LISTE</h2>
+					</div><!-- end card-header-->
+					<div class="card-content">
+						<p>Ovaj zadatak proverava <br>
+						vase znanje iz HTML5. <br>
+						Sa posebnim akcentom <br>
+						na listama</p>
+						<button class="task-button fix-button">URADI</button>
+					</div><!-- end card-content -->
+				</div><!-- end task-card -->												
+			</div><!-- end content -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<script src="../../views/controller.js"></script>
+	<script src="../../views/router.js"></script>
+</body>
+</html>
