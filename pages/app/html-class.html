@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITukacija</title>
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/html-lesson.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/left-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/right-bar.css">
+</head>
+<body>
+	<div id="container">
+		<div id="menu">
+			<ul>
+				<li><h3>PODESAVANJA</h3></li>
+				<li><h3>INFORMACIJE</h3></li>
+				<li><h3>OBRISI NALOG</h3></li>
+				<li><h3>PROFIL</h3></li>
+			</ul>
+		</div><!-- end menu -->
+		<div class="left">
+			<div class="level">
+				<h2>NIVO</h2>
+				<div class="circle">
+					<div class="inside"></div>
+					<h3>1</h3>
+				</div><!-- end circle -->
+				<h4>POCETNIK</h4>
+			</div><!-- end level -->
+			<div class="nav">
+				<h2>MENI</h2>
+				<div class="field first non-active kontrolna">
+					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
+					<h4>Kontrolna Tabla</h4>
+				</div><!-- end field -->
+				<div class="field ucionice" id="active">
+					<img src="../../public/stylesheets/assets/icons/menu/002-tabs.svg">
+					<h4>Ucionice</h4>
+				</div><!-- end field -->
+				<div class="field non-active aktivnosti">
+					<img src="../../public/stylesheets/assets/icons/menu/003-newspaper.svg">
+					<h4>Aktivnosti</h4>
+				</div><!-- end field -->
+				<div class="field non-active zadaci">
+					<img src="../../public/stylesheets/assets/icons/menu/001-network.svg">
+					<h4>Zadaci</h4>
+				</div><!-- end field -->
+			</div><!-- end nav -->
+		</div><!-- end left -->
+		<div class="right">
+			<div class="header">
+				<div class="current-name">
+					<h3 class="used-h first-h">HTML 5 Ucionica</h3>
+				</div><!-- end cn -->
+				<div class="user">
+					<div id="image-holder">
+					</div><!-- end image holder -->
+					<div class="info">
+						<h2 id="Kname">Korisnicko Ime</h2><br>
+						<p>ONLINE</p>
+						<img class="arrow" id="arrow" src="../../public/stylesheets/assets/icons/down-arrow.svg">
+					</div><!-- end info -->
+				</div><!-- end user -->
+			</div><!-- end header -->
+			<div class="content">
+				<div class="lesson">
+					<div class="lesson-header">
+						<div class="col-4 col-1">
+							<img src="../../public/stylesheets/assets/icons/003-html-5.svg">
+						</div><!-- end col-4 -->
+						<div class="col-4">
+							<h3 class="small">NAZIV</h3>
+							<h2 class="big">HTML 5</h2>
+						</div><!-- end col-4 -->
+						<div class="col-4">
+							<h3 class="small small-f">TEZINA</h3>
+							<h2 class="big small-f">LAKO</h2>						
+						</div><!-- end col-4 -->
+						<div class="col-4">
+							<h3 class="small">LEKCIJA</h3>
+							<h2 class="big">7 LEKCIJA</h2>						
+						</div><!-- end col-4 -->
+						<div class="col-4 col-5">
+							<button id="zapocni" class="izadji">IZADJI</button>
+						</div><!-- end col-4 -->
+					</div><!-- end lesson-hedaer -->
+				</div><!-- end lesson -->
+				<div class="lesson-box first-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 1</h1>
+					<h2 class="lesson-sub l-mar">UVOD U HTML</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					Prvo da kazemo sta je to HTML. HTML je skracenica od HyperText Markup Language. <br>
+					To je opisni jezik za stvaranje web stranica. Njime se opisuje izgled dokumenta, <br>
+					pozicije slika, velicina teksta, boja pozadine, boja slova itd.  <br>
+					<br>
+					HTML stranice nisu nista drugo nego obicne tekstualne datoteke koje <br>
+					sadrzavaju upute kako prikazati stranicu. Za opis stranica se koriste tagovi <br> 
+					koji se pisu unutar znakova < i >. Evo primera:	<br>
+					</p>
+					<div class="code-text l-mar">
+						<p class="code-line"><span class="line-number">1 | </span> Ovo je <span class="tag">&lt;b&gt;</span><b class="bolded"> tekst </b><span class="tag">&lt;/b&gt;</span> za web stranicu.</p>
+					</div><!-- end lesson box -->
+				</div><!-- end lesson box -->
+				<div class="lesson-box second-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 2</h1>
+					<h2 class="lesson-sub l-mar">ELEMENTI</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					<span class="tag">&lt;html&gt;</span> <br>
+					- sa ovim elementom pocinje i zavrsava svaka web stranica<br>
+					<br>
+					<span class="tag">&lt;head&gt;</span> <br>
+					- ovaj element se treba nalaziti unutar &lt;html&gt; elementa <br>
+					- browser ne prikazuje sadrzaj unutar ovog elementa <br>
+					<br>
+					<span class="tag">&lt;title&gt;</span><br>
+					- ovaj element se treba nalaziti unutar HEAD elementa<br>
+					- riječi koje napisete unutar ovog elementa ce biti prikazane na vrhu <br>
+					web browsera<br>
+					<br>
+					<span class="tag">&lt;body&gt;</span><br>
+					- sadržaj napisan unutar ovog elementa ce se prikazivati na web stranici, <br>
+					to znaci tu idu tekst, slike...
+					</p>
+					<div class="code-text l-mar editor-2">
+						<p class="code-line"><span class="line-number">1 | </span><span class="tag">&lt;html&gt;</span></p>
+						<p class="code-line"><span class="line-number">2 | </span> <span class="tag head">&lt;head&gt;</span></p>
+						<p class="code-line"><span class="line-number">3 | </span><span class="tag title">&lt;title&gt;</span> Ovo je naslov <span class="tag">&lt;/title&gt;</span></p>
+						<p class="code-line"><span class="line-number">4 | </span><span class="tag head">&lt;/head&gt;</span></p>
+						<p class="code-line"><span class="line-number">5 | </span><span class="tag head">&lt;body&gt;</span></p>
+						<p class="code-line"><span class="line-number">6 | </span><span class="tag title">&lt;p&gt;</span> Ovo je text <span class="tag">&lt;/p&gt;</span><br></p>
+						<p class="code-line"><span class="line-number">7 | </span><span class="tag head">&lt;/body&gt;</span></p>
+						<p class="code-line"><span class="line-number">8 | </span> <span class="tag">&lt;html&gt;</span></p>
+					</div><!-- end lesson box -->
+				</div><!-- end lesson box -->
+				<div class="lesson-box third-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 3</h1>
+					<h2 class="lesson-sub l-mar">KOMENTARI</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					Sa komentarima mozete pisati bilo gde unutar skripte a taj tekst nece biti <br>
+					prikazivan na stranici, tj. moci će se videti samo ako otvorite <br>
+					skriptu sa code editorom. Na ovaj nacin mozete ostavljati sebi poruke unutar <br>
+					skripte i sa njima npr. skrenuti pozornost na jedan deo skripte, ili sa ovime <br>
+					mozemo jedan deo skripte iskljuciti, a sačuvati kod tog dela, kojeg mozemo <br>
+					ponovno aktivirati ako izbrisemo sljedece: <br>
+					<br>
+					&lt;! -- sa ovim otvaramo komentar --&gt; sa ovim zatvaramo komentar
+					</p>
+					<div class="code-text l-mar editor-3">
+						<p class="code-line"><span class="line-number">1 | </span><span class="tag">&lt;html&gt;</span></p>
+						<p class="code-line"><span class="line-number">2 | </span> <span class="tag head">&lt;head&gt;</span></p>
+						<p class="code-line"><span class="line-number">3 | </span><span class="tag title">&lt;title&gt;</span> Komentari <span class="tag">&lt;/title&gt;</span></p>
+						<p class="code-line"><span class="line-number">4 | </span><span class="tag head">&lt;/head&gt;</span></p>
+						<p class="code-line"><span class="line-number">5 | </span><span class="tag head">&lt;body&gt;</span></p>
+						<p class="code-line"><span class="line-number">6 | </span><span class="title">&lt;! -- sa ovim otvaramo komentar --&gt;</span></span><br></p>
+						<p class="code-line"><span class="line-number">7 | </span><span class="tag head">&lt;/body&gt;</span></p>
+						<p class="code-line"><span class="line-number">8 | </span> <span class="tag">&lt;html&gt;</span></p>
+					</div><!-- end lesson box -->
+				</div><!-- end lesson box -->
+				<div class="lesson-box four-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 4</h1>
+					<h2 class="lesson-sub l-mar">ATRIBUTI</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					HTML atributi se koriste za prosirivanje tagova. Imamo vise vrsta <br>
+					atributa a neki od njih su: <br><br>
+					- Class ili ID atribut<br>
+					- Name atribut<br>
+					- Title atribut<br>
+					- Align atribut<br>
+					- Valign atribut<br>
+					<br>
+					</p>
+					<p class="lesson-text l-mar">
+					<span class="atr-title">Class ili ID atribut </span><br>
+					Te atribute cemo najcesce koristiti kada imamamo stil definiran u CSS-u. 
+					Znaci ako negde u nekom CSS Style-u imamo definirano npr. pod 
+					klasom "odlomak" plava pozadina, bela slova, bold slova i italic itd. 
+					Tada samo u HTML fajlu napisemo npr. <span class="tag">&lt;table</span><span class="atr-class"> class</span>=<span class="atr-text">"odlomak"</span><span>&gt;</span> 
+					</p>
+					<p class="lesson-text l-mar">
+					<span class="atr-title">Name atribut</span><br>
+					Sa name atributom dodeljujemo ime necemu, npr. polju za unos teksta:
+					</p>
+					<div class="code-text l-mar editor-4">
+						<p class="code-line"><span class="line-number">1 | </span>Ime: <span class="tag">&lt;input</span><span class="atr-class"> type</span>=<span class="atr-text">"text"</span><span class="atr-class"> name</span>=<span class="atr-text">"ime"</span><span>&gt;</span> </p>
+						<p class="code-line"><span class="line-number">2 | </span>Prezime: <span class="tag">&lt;input</span><span class="atr-class"> type</span>=<span class="atr-text">"text"</span><span class="atr-class"> name</span>=<span class="atr-text">"prezime"</span><span>&gt;</span></p>						
+					</div><!-- end lesson box -->
+					<p class="lesson-text l-mar">
+					<span class="atr-title">Align atribut</span><br>
+					Za razliku od title atributa align atribut se dosta cesto koristi. Njime <br>
+					odredjujemo poziciju nekog teksta, tablice, slike itd. Evo primera <br>
+					</p>
+					<div class="code-text l-mar editor-4 editor-fix">
+						<p class="code-line"><span class="line-number">1 | </span><span class="tag">&lt;p</span><span class="atr-class"> align</span>=<span class="atr-text">"center"</span><span>&gt;</span>Tekst je centriran u sredini<span class="tag">&lt;/p&gt;</span></p>
+							<p class="code-line"><span class="line-number">2 | </span><span class="tag">&lt;p</span><span class="atr-class"> align</span>=<span class="atr-text">"right"</span><span>&gt;</span>Tekst je centriran desno<span class="tag">&lt;/p&gt;</span></p>
+						<p class="code-line"><span class="line-number">3 | </span><span class="tag">&lt;p</span><span class="atr-class"> align</span>=<span class="atr-text">"right"</span><span>&gt;</span>Tekst je centriran desno<span class="tag">&lt;/p&gt;</span></p>		
+					</div>										
+				</div><!-- end lesson box -->	
+				<div class="lesson-box five-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 5</h1>
+					<h2 class="lesson-sub l-mar">LINKOVI</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					Vasi linkovi mogu voditi na unutrasnjost stranice(internal), <br>
+					na kojoj se nalaze (npr. link "na vrh"), na stranicu unutar vase domene(local) <br> 
+					ili na neku drugu stranicu izvan vase domene(global) <br>
+					</p>
+					<div class="code-text l-mar editor-4">
+						<p class="code-line"><span class="line-number">1 | </span><span class="tag">&lt;a</span><span class="atr-class"> href</span>=<span class="atr-text">"http://www.tutorijali.net/"</span><span class="atr-class"> target</span>=<span class="atr-text">"_blank"</span> </p>
+						<p class="code-line"><span class="line-number">2 | </span><span class="tag">></span> Tutorijali.net <span class="tag">&lt;/a&gt;</span> </p>
+					</div><!-- end lesson box -->
+				</div><!-- end lesson box -->			
+				<div class="lesson-box six-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 6</h1>
+					<h2 class="lesson-sub l-mar">Liste</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					Sledeca stvar koju mozemo koristiti u web stranicama su brojevne i <br>
+					nebrojevne liste. Brojevne liste se ubacuju pomocu &lt;ol&gt; taga, a nebrojevne <br>
+					liste pomocu &lt;ul&gt; taga. Pojedine stavke liste se definiraju pomocu &lt;li&gt; <br>
+					taga (ovaj tag ne zahteva zavrsni tag). Osnovna razlika izmedju ove <br>
+					dve vrste listi je ta sto ce u brojevnim  listama ispred pojedinih stavki <br>
+					liste stajati redni brojevi, a u nebrojevnoj listi ce stajati krugovi.
+					</p>										
+					<div class="code-text l-mar editor-3">
+						<p class="code-line"><span class="line-number">1 | </span>Proizvodi:</span></p>
+						<p class="code-line"><span class="line-number">2 | </span> <span class="tag head">&lt;ol&gt;</span></p>
+						<p class="code-line"><span class="line-number">3 | </span><span class="tag title">&lt;li&gt;</span> CD <span class="tag">&lt;/li&gt;</span></p>
+						<p class="code-line"><span class="line-number">4 | </span><span class="tag title">&lt;li&gt;</span> Tastatura <span class="tag">&lt;/li&gt;</span></p>
+						<p class="code-line"><span class="line-number">5 | </span><span class="tag title">&lt;li&gt;</span> Monitor <span class="tag">&lt;/li&gt;</span></p>
+						<p class="code-line"><span class="line-number">6 | </span><span class="tag title">&lt;li&gt;</span> Mis <span class="tag">&lt;/li&gt;</span></p>
+						<p class="code-line"><span class="line-number">7 | </span><span class="tag title">&lt;li&gt;</span> DVD <span class="tag">&lt;/li&gt;</span></p>
+						<p class="code-line"><span class="line-number">8 | </span><span class="tag">&lt;/ol&gt;</span></p>
+					</div><!-- end lesson box -->
+					<p class="lesson-text l-mar">
+					<span class="atr-title">Rezultat će biti:</span><br><br>
+					Proizvodi: <br>
+					1.DVD <br>
+					2.CD <br>
+					3.Tastatura <br>
+					4.Monitor <br>
+					5.Mis
+					</p>
+				</div><!-- end lesson box -->			
+				<div class="lesson-box seven-lesson">
+					<h1 class="lesson-title l-mar">LEKCIJA 7</h1>
+					<h2 class="lesson-sub l-mar">BOJA POZADINE</h2>
+					<hr class="lesson-hr l-mar">
+					<p class="lesson-text l-mar">
+					Boja pozadine odnosno bgcolor atribut se koristi za promenu boje <br>
+					pozadine cele stranice ili pojedinih elemenata kao sto su tablice. <br>
+					Bgcolor mozete staviti na vise mesta u HTML elemente ali mi vam <br>
+					prporucujemo da bgcolor koristite samo za boju pozadine stranice a za <br>
+					tablice koristite CSS. <br>
+					<br>	
+					Evo primjera kako promijeniti boju pozadine stranice:
+					</p>
+					<div class="code-text l-mar editor-4 editor-fix">
+						<p class="code-line"><span class="line-number">1 | </span><span class="tag">&lt;body</span><span class="atr-class"> bgcolor</span>=<span class="atr-text">"blue"</span><span>&gt;</p>
+							<p class="code-line"><span class="line-number">2 | <span class="head">Boja pozadine je postavljena na plavu</span></p>
+						<p class="code-line"><span class="line-number">3 | </span><span class="tag">&lt;/body&gt;</span></p>		
+					</div>										
+				</div><!-- end lesson box -->										
+			</div><!-- end content -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<script src="../../views/controller.js"></script>
+	<script src="../../views/router.js"></script>
+	<script src="../../views/class.js"></script>
+</body>
+</html>
