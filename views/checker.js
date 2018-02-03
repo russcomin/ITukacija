@@ -22,6 +22,6 @@ document.addEventListener('keydown', function(e) {
 })
 
 function app() {
-	document.location = "../pages/__starter.html";
+	document.location = "../pages/starter.html";
 }
 

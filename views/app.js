@@ -9,7 +9,7 @@ document.addEventListener('keydown', function(e) {
 //create account
 	let c_b = document.getElementById('napravi_nalog');
 		c_b.addEventListener('click', function () {
-			document.location = "pages/__registartion.html";
+			document.location = "pages/registartion.html";
 		})
 
 let login = document.getElementById('submit_login');

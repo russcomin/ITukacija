@@ -36,7 +36,7 @@ let nastavi = document.getElementById('submit_login');
 		if (password.length > 5) {
 			localStorage.setItem('password', password);
 			if (name.length > 5) {
-				document.location = "__checker.html";
+				document.location = "checker.html";
 			}
 		}else {
 			error.innerHTML = PassErr;
