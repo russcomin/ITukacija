@@ -27,3 +27,24 @@ let read,
 
 	read.addEventListener('click', function() { document.location = "aktivnosti.html" });
 	doTask.addEventListener('click', function() { document.location = "zadaci.html" });
+
+	let logout = document.getElementById('logout');
+		logout.addEventListener('click', executeLogout);
+
+		function executeLogout() {
+			document.location = "../../../index.html";
+		}
+
+	let settings = document.getElementsByClassName('settings')[0];
+		settings.addEventListener('click', executeSettings);
+
+		function executeSettings() {
+			document.location = "podesavanja.html";
+		}	
+
+	let settings1 = document.getElementsByClassName('settings')[1];
+		settings1.addEventListener('click', executeSettings1);
+
+		function executeSettings1() {
+			document.location = "podesavanja.html";
+		}		

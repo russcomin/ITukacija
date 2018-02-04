@@ -1,0 +1,262 @@
+#container {
+	width: 1024px;
+	height: 640px;
+	background-color: #f5f5f5;
+}
+
+.right {
+	float: right;
+	width: 777px;
+	height: 640px;	
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+}
+
+.content {
+	width: 777px;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-top: 60px;
+}
+
+.delete-box {
+	width: 526px;
+	height: 130px;
+	margin-top: 24px;
+	margin-left: 24px;
+}
+
+
+.delete-field {
+    width: 280px;
+    height: 100px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.delete-field h2 {
+    font-family: Roboto-Bold;
+    font-size: 9px;
+    color: #a6a6a6;
+    letter-spacing: 1.6px;
+    margin-left: 10px;
+}
+
+.delete-field input {
+    width: 260px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border-bottom: 3px solid #f2f2f1;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-indent: 14px;
+    font-family: Roboto-Regular;
+    letter-spacing: 1.2px;
+    font-size: 11px;
+}
+
+.delete-field input::-webkit-input-placeholder {
+    font-family: Roboto-Light;
+    font-size: 10px;
+    letter-spacing: .9px;
+    color: #b9b9b9;
+}
+
+#delete_acc {
+	float: right;
+    width: 137px;
+    height: 46px;
+    background-color: #aaaaaa;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #888888;
+    font-family: Roboto-Bold;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    color: white;
+    cursor: pointer;
+    margin-top: 49px;
+    margin-right: 45px;
+}
+
+#delete_acc:hover {
+    transition: .4s;
+    opacity: .8;
+    border: none;
+}
+
+
+.form {
+    width: 342px;
+    height: 338px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-left: 24px;
+    background-color: white;    
+    margin-top: 24px;
+}
+
+.form-holder {
+    width: 280px;
+    height: 300px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+
+.form-field {
+    width: 280px;
+    height: 90px;
+    float: left;
+}
+
+.form-field h2 {
+    font-family: Roboto-Bold;
+    font-size: 9px;
+    color: #a6a6a6;
+    letter-spacing: 1.6px;
+}
+
+.form-field input {
+    width: 260px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border-bottom: 3px solid #f2f2f1;
+    margin-top: 15px;
+    text-indent: 14px;
+    font-family: Roboto-Regular;
+    letter-spacing: 1.2px;
+    font-size: 11px;
+}
+
+.first-form-field {
+    margin-top: 10px;
+}
+
+.second-form-field {
+    margin-top: 20px;
+}
+
+.form-field input::-webkit-input-placeholder {
+    font-family: Roboto-Light;
+    font-size: 10px;
+    letter-spacing: .9px;
+    color: #b9b9b9;
+}
+
+#submit_login {
+    width: 137px;
+    height: 46px;
+    background-color: #4fba6f;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #40985b;
+    font-family: Roboto-Bold;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#submit_login:hover {
+    transition: .4s;
+    opacity: .8;
+    border: none;
+}
+
+.image {
+    width: 161px;
+    height: 178px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-left: 20px;
+    background-color: white;    
+    margin-top: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image img {
+    width: 64px;
+    height: 52px;
+    margin-top: 40px;
+    opacity: .5;
+}
+
+.text {
+    background-color: #ededed;
+    width: 161px;
+    height: 45px;
+    margin-top: 37px;
+}
+
+.text h3 {
+    font-size: 10px;
+    color: #8d8c8c;
+    font-family: Roboto-Bold;
+    letter-spacing: 1.6px;
+    line-height: 48px;
+}
+
+#imger {
+    position: absolute;
+    top: 280px;
+    left: 590px;
+    width: 158px;
+    height: 178px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+#modal {
+    position: absolute;
+    left: 245px;
+    top: -400px;
+    width: 777px;
+    height: 55px;
+    -webkit-box-shadow: 0px 12px 33px -8px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 12px 33px -8px rgba(0,0,0,0.10);
+    box-shadow: 0px 12px 33px -8px rgba(0,0,0,0.10);
+    background-color: white;
+    z-index: 100;
+}
+
+#modal p {
+    vertical-align: middle;display: inline-block;
+    line-height: 55px;
+    font-size: 14px;
+}
+
+#modal p:nth-child(1) {
+    margin-left: 40px;
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    color: #e74c3c;
+}
+
+#modal p:nth-child(2) {
+    margin-left: 5px;
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    color: #bdc3c7;
+    letter-spacing: .7px;
+}
+
+#modal img {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 17.5px;
+    margin-right: 40px;
+    opacity: .5;
+    cursor: pointer;
+}

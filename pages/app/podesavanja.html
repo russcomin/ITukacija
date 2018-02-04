@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title>ITukacija</title>
-	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/app.css">
 	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/left-bar.css">
 	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/right-bar.css">
 	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/podesavanja.css">
 </head>
 <body>
 	<div id="container">
+		<div id="modal">
+			<p>Greska!</p> <p id="error">:broj greske: && :opis greske:</p>
+			<img id="close" src="../..//public/stylesheets/assets/icons/error.svg">
+		</div><!-- end modal -->		
 		<div id="menu">
 			<ul>
 				<li class="settings"><h3>PODESAVANJA</h3></li>
@@ -28,7 +32,7 @@
 			</div><!-- end level -->
 			<div class="nav">
 				<h2>MENI</h2>
-				<div class="field first kontrolna" id="active">
+				<div class="field first kontrolna non-active">
 					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
 					<h4>Kontrolna Tabla</h4>
 				</div><!-- end field -->
@@ -49,7 +53,7 @@
 		<div class="right">
 			<div class="header">
 				<div class="current-name">
-					<h3 class="used-h first-h">Kontrolna Tabla</h3>
+					<h3 class="used-h first-h">PODESAVANJA</h3>
 				</div><!-- end cn -->
 				<div class="user">
 					<div id="image-holder">
@@ -62,57 +66,40 @@
 				</div><!-- end user -->
 			</div><!-- end header -->
 			<div class="content">
-				<div class="classes">
-					<h3 class="used-h">UCIONICE</h3>
-					<div class="card fis">
-						<img src="../../public/stylesheets/assets/icons/003-html-5.svg">
-						<h2>HTML 5</h2>
-						<h3 class="h-fix">Nauci da pravis sajtove</h3><br>
-						<h3>Web prezentacije</h3>
-						<button type="button" class="nauci">NAUCI</button>
-					</div><!-- end card -->
-					<div class="card sec">
-						<img src="../../public/stylesheets/assets/icons/002-css-3.svg">
-						<h2>CSS 3</h2>
-						<h3 class="h-fix">Ulepsavanje sajtova</h3><br>
-						<h3>Web animacije</h3>
-						<button type="button" class="nauci">NAUCI</button>
-					</div><!-- end card -->
-					<div class="card sec">
-						<img src="../../public/stylesheets/assets/icons/001-java.svg">
-						<h2>JAVA</h2>
-						<h3 class="h-fix">Android aplikacije</h3><br>
-						<h3>Baze podataka</h3>
-						<button type="button" class="nauci">NAUCI</button>
-					</div><!-- end card -->
-				</div><!-- end classes -->
-				<div class="blog">
-					<h3 class="used-h">AKTIVNOSTi</h3>
-					<img src="../../public/stylesheets/assets/blog/post-1.png">
-					<h2>Kako postati programer?</h2>
-					<p>
-						Ovde mozes da naucs kako <br>
-						da postanes bolji programer, <br> 
-						sta je vazno i na sta da obratis <br>
-						paznju pri ucenju
-					</p>
-					<h2 id="read">PROCITAJ --></h2>
-				</div><!-- end blog -->
-				<div class="blog sec-blog">
-					<h3 class="used-h">ZADACI</h3>
-					<img src="../../public/stylesheets/assets/blog/post-2.png">
-					<h2>HTML 5 Tagovi</h2>
-					<p>
-					Ovaj zadatak je namenjen <br>
-					svima koji zele da provere znanje<br>
-					html tagova, takodje uspesno<br>
-					resavanje znaci drugi nivo
-					</p>
-					<h2 id="do">URADI --></h2>
-				</div><!-- end blog -->
+			<div class="delete-box box">
+				<div class="delete-field">
+					<h2>BRISANJE NALOGA</h2>
+					<input type="password" id="re-pass"
+						placeholder="Unesite vasu sifru...">
+				</div><!-- end field -->				
+				<button type="button" id="delete_acc">OBRISI</button>	
+			</div><!-- end delete-box -->
+			<div class="form">
+				<div class="form-holder">	
+					<div class="form-field first-form-field">
+						<h2>PROMENI KORISNICKO IME</h2>
+						<input type="text" id="korisnicko_ime"
+						placeholder="Unesite novo ime...">
+					</div><!-- end field -->
+					<div class="form-field second-form-field">
+						<h2>PROMENI LOZINKU</h2>
+						<input type="password" id="sifra"
+						placeholder="Unesite novu sifru...">
+					</div><!-- end field -->
+					<input type="button" id="submit_login" value="PROMENI">
+				</div><!-- end form-holder -->
+			</div><!-- end form -->
+				<div class="image">
+					<img src="../../public/stylesheets/assets/icons/picture.svg">
+					<div class="text">
+						<h3>DODAJ SLIKU</h3>
+					</div>
+					<input type="file" id="imger">
+				</div><!-- end image -->										
 			</div><!-- end content -->
 		</div><!-- end right -->
 	</div><!-- end container -->
+	<script src="../../views/settings.js"></script>
 	<script src="../../views/controller.js"></script>
 	<script src="../../views/router.js"></script>
 	<script src="../../views/app-controller.js"></script>
