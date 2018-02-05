@@ -52,6 +52,7 @@ let nastavi = document.getElementById('submit_login');
             var fr = new FileReader();
             fr.onload = function () {
                 localStorage['foo'] = fr.result;
+				location.reload();
             }
             fr.readAsDataURL(files[0]);
         }

@@ -25,9 +25,20 @@ let i = 0;
 		arrow.style.transform = "rotate(0deg)";
 	}
 
-	html_class = document.getElementsByClassName('html-class')[0];
-	html_class.addEventListener('click', htmlLesson);
+let exp;
 
-	function htmlLesson() {
-		document.location = "html-class.html";
+	exp = 550;
+
+	this.setExp = localStorage.setItem('exp', exp);
+
+	// IF LEVEL 2
+
+	/*
+	if (exp > 400) {
+		let levelNumber = document.getElementById('levelNumber');
+			levelNumber.innerHTML = 2;
+
+		let levelIndicator = document.getElementsByClassName('circle')[0];
+			levelIndicator.style.borderColor = "#dfdfdf #2ecc71 #2ecc71 #dfdfdf";
 	}
+	*/

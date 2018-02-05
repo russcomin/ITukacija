@@ -11,10 +11,10 @@
 	<div id="container">
 		<div id="menu">
 			<ul>
-				<li><h3>PODESAVANJA</h3></li>
-				<li><h3>INFORMACIJE</h3></li>
-				<li><h3>OBRISI NALOG</h3></li>
-				<li><h3>PROFIL</h3></li>
+				<li class="settings"><h3>PODESAVANJA</h3></li>
+				<li id="logout"><h3>IZLOGUJ SE</h3></li>
+				<li class="settings"><h3>OBRISI NALOG</h3></li>
+				<li id="info"><h3>INFORMACIJE</h3></li>
 			</ul>
 		</div><!-- end menu -->
 		<div class="left">
@@ -32,7 +32,7 @@
 					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
 					<h4>Kontrolna Tabla</h4>
 				</div><!-- end field -->
-				<div class="field ucionice" id="active">
+				<div class="field ucionice non-active">
 					<img src="../../public/stylesheets/assets/icons/menu/002-tabs.svg">
 					<h4>Ucionice</h4>
 				</div><!-- end field -->
@@ -145,7 +145,7 @@
 					mozemo jedan deo skripte iskljuciti, a sasuvati kod tog dela, kojeg mozemo <br>
 					ponovno aktivirati ako izbrisemo sljedece: <br>
 					<br>
-					&lt;! -- sa ovim otvaramo komentar --&gt; sa ovim zatvaramo komentar
+					&lt;! -- sa ovim otvaramo komentar --&gt; <span class="atr-title">sa ovim zatvaramo komentar</span>
 					</p>
 					<div class="code-text l-mar editor-3">
 						<p class="code-line"><span class="line-number">1 | </span><span class="tag">&lt;html&gt;</span></p>
@@ -268,6 +268,7 @@
 	</div><!-- end container -->
 	<script src="../../views/controller.js"></script>
 	<script src="../../views/router.js"></script>
+	<script src="../../views/menu-bar.js"></script>
 	<script src="../../views/class.js"></script>
 </body>
 </html>
