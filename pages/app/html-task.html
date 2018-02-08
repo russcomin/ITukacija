@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITukacija</title>
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/left-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/right-bar.css">
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/html-task.css">
+</head>
+<body>
+	<div id="container">
+		<div id="modal">
+			<p>Greska!</p> <p id="error">:broj greske: && :opis greske:</p>
+			<img id="close" src="../../public/stylesheets/assets/icons/error.svg">
+		</div><!-- end modal -->
+		<div id="menu">
+			<ul>
+				<li class="settings"><h3>PODESAVANJA</h3></li>
+				<li id="logout"><h3>IZLOGUJ SE</h3></li>
+				<li class="settings"><h3>OBRISI NALOG</h3></li>
+				<li id="info"><h3>INFORMACIJE</h3></li>
+			</ul>
+		</div><!-- end menu -->		
+		<div class="left">
+			<div class="level">
+				<h2>NIVO</h2>
+				<div class="circle">
+					<h3 id="levelNumber">1</h3>
+				</div><!-- end circle -->
+				<h4>POCETNIK</h4>
+			</div><!-- end level -->
+			<div class="nav">
+				<h2>MENI</h2>
+				<div class="field first kontrolna non-active">
+					<img src="../../public/stylesheets/assets/icons/menu/004-layout.svg">
+					<h4>Kontrolna Tabla</h4>
+				</div><!-- end field -->
+				<div class="field non-active ucionice">
+					<img src="../../public/stylesheets/assets/icons/menu/002-tabs.svg">
+					<h4>Ucionice</h4>
+				</div><!-- end field -->
+				<div class="field non-active aktivnosti">
+					<img src="../../public/stylesheets/assets/icons/menu/003-newspaper.svg">
+					<h4>Aktivnosti</h4>
+				</div><!-- end field --> 
+				<div class="field non-active zadaci">
+					<img src="../../public/stylesheets/assets/icons/menu/001-network.svg">
+					<h4>Zadaci</h4>
+				</div><!-- end field -->
+			</div><!-- end nav -->
+		</div><!-- end left -->
+		<div class="right">
+			<div class="header">
+				<div class="current-name">
+					<h3 class="used-h first-h">HTML 5 | Tagovi</h3>
+				</div><!-- end cn -->
+				<div class="user">
+					<div id="image-holder">
+					</div><!-- end image holder -->
+					<div class="info">
+						<h2 id="Kname">Korisnicko Ime</h2><br>
+						<p>ONLINE</p>
+						<img class="arrow" id="arrow" src="../../public/stylesheets/assets/icons/down-arrow.svg">
+					</div><!-- end info -->
+				</div><!-- end user -->
+			</div><!-- end header -->
+			<div class="content">
+				<div class="test-box box">
+					<div class="text-box-header">
+						<div class="text-col-1 col-box">
+							<img src="../../public/stylesheets/assets/icons/003-html-5.svg">
+						</div><!-- text-col-1 -->
+						<div class="text-col-2 col-box">
+							<h5 class="small">ZADATAK</h5>
+							<h3 class="big">HTML 5</h3>
+						</div><!-- end text-col-2 -->
+						<div class="text-col-2 col-box">
+							<h5 class="small">OBLAST</h5>
+							<h3 class="big">TAGOVI</h3>							
+						</div><!-- end text-col-2 -->
+						<div class="text-col-3 col-box">
+							<p class="text-desc">Ovaj zadatak proverava vase znanje iz HTML5. <br>
+							Sa posebnim akcentom na tagovima</p>
+						</div><!-- end text-col-3 -->
+					</div><!-- end text-box-header -->
+					<div class="task-box">
+						<div class="task-number">
+							<h1 class="task-number-tag">1</h1>
+						</div><!-- end task-number -->
+						<div class="task-content">
+							<h3>Kojim tagom pocinje i zavrsava svaka web stranica</h3>
+							<input type="text" class="task-input tag" id="first-task" placeholder="<unesi tag>">
+						</div><!-- end task-content -->
+					</div><!-- end task-box -->	
+					<div class="task-box">
+						<div class="task-number">
+							<h1 class="task-number-tag">2</h1>
+						</div><!-- end task-number -->
+						<div class="task-content">
+							<h3>Browser ne prikazuje sadrzaj ovog elementa</h3>
+							<input type="text" class="task-input tag" id="second-task" placeholder="<unesi tag>">
+						</div><!-- end task-content -->
+					</div><!-- end task-box -->
+					<div class="task-box">
+						<div class="task-number">
+							<h1 class="task-number-tag">3</h1>
+						</div><!-- end task-number -->
+						<div class="task-content">
+							<h3>Tekst unutar ovog tag-a ce biti prikazane na vrhu web browsera</h3>
+							<input type="text" class="task-input tag" id="third-task" placeholder="<unesi tag>">
+						</div><!-- end task-content -->
+					</div><!-- end task-box -->
+					<div class="task-box fix-box">
+						<div class="task-number">
+							<h1 class="task-number-tag">4</h1>
+						</div><!-- end task-number -->
+						<div class="task-content">
+							<h3>Sadrzaj unutar ovog elementa ce se prikazivati na web stranici</h3>
+							<input type="text" class="task-input tag" id="fourth-task" placeholder="<unesi tag>">
+						</div><!-- end task-content -->
+					</div><!-- end task-box -->
+					<div class="button-holder">
+						<button type="button" id="predaj">PREDAJ</button>
+					</div><!-- end button-holder -->
+				</div><!-- end test-box -->				
+			</div><!-- end content -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<script src="../../views/controller.js"></script>
+	<script src="../../views/router.js"></script>
+	<script src="../../views/app-controller.js"></script>
+	<script src="../../views/menu-bar.js"></script>
+	<script src="../../views/task-controller.js"></script>
+</body>
+</html>

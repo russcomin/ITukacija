@@ -116,3 +116,51 @@
 	right: 0px;
 	top: 50px;
 }
+
+#level-2-modal-holder {
+	width: 1024px;
+	height: 640px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 200;
+	background-color: #34495e;
+	opacity: .8;
+	display: none;
+}
+
+#level-2-modal {
+	width: 300px;
+	height: 250px;
+	background: white;
+	position: absolute;
+	top: -400px;
+	left: 512px;
+	transform: translate(-50%,0);
+	z-index: 300;
+	text-align: center;
+}
+
+.modal-small {
+	font-family: Roboto-Regular;
+	color: #e1e1e1;
+	letter-spacing: 2.4px;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.modal-big {
+	font-family: Roboto-Thin;
+	color: #979797;
+	letter-spacing: 1.4px;
+	font-size: 72px;	
+}
+
+#take-level-2 {
+	font-size: 9px;
+	margin-top: 20px;
+}
+
+.first-text {
+	margin-top: 30px;
+}

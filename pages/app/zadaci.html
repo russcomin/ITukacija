@@ -9,6 +9,14 @@
 </head>
 <body>
 	<div id="container">
+		<div id="level-2-modal-holder">
+		</div><!-- end level-2-modal-holder -->
+		<div id="level-2-modal">
+			<h3 class="modal-small first-text">POSTALI STE</h3>
+			<h2 class="modal-big">2</h2>
+			<h3 class="modal-small">NIVO</h3>
+			<button class="task-button" id="take-level-2"><b>NASTAVI</b></button>
+		</div><!-- end level-2-modal -->
 		<div id="menu">
 			<ul>
 				<li class="settings"><h3>PODESAVANJA</h3></li>
@@ -22,9 +30,9 @@
 				<h2>NIVO</h2>
 				<div class="circle">
 					<div class="inside"></div>
-					<h3>1</h3>
+					<h3 id="levelNumber">1</h3>
 				</div><!-- end circle -->
-				<h4>POCETNIK</h4>
+				<h4 id="zvanje">POCETNIK</h4>
 			</div><!-- end level -->
 			<div class="nav">
 				<h2>MENI</h2>
@@ -73,7 +81,7 @@
 						vase znanje iz HTML5. <br>
 						Sa posebnim akcentom <br>
 						na tagovima</p>
-						<button class="task-button">URADI</button>
+						<button class="task-button" id="executeHTML">URADI</button>
 					</div><!-- end card-content -->
 				</div><!-- end task-card -->
 				<div class="task-card box">
@@ -124,5 +132,29 @@
 	<script src="../../views/controller.js"></script>
 	<script src="../../views/menu-bar.js"></script>
 	<script src="../../views/router.js"></script>
+	<script src="../../views/level-controller.js"></script>
+	<script type="text/javascript">
+		let htmlBTN = document.getElementById('executeHTML');
+			htmlBTN.addEventListener('click', executeTASK);
+
+		let modal_forward = document.getElementById('level-2-modal-holder');
+		let modal_box = document.getElementById('level-2-modal');
+
+
+		function executeTASK() {
+			document.location = "html-task.html";
+		}
+		if (localStorage['passed'] == 'not-clicked') {
+			modal_forward.style.display = 'block';
+			modal_box.style.top = '120px';
+			this.passer = localStorage.setItem('passed', 'clicked');
+		}
+		let executer = document.getElementById('take-level-2');
+			executer.addEventListener('click', function() {
+				modal_forward.style.display = "none";
+				modal_box.style.top = "-400px";
+			});
+
+	</script>
 </body>
 </html>
