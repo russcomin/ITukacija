@@ -1,6 +1,7 @@
 let modal = document.getElementById('modal');
 let close = document.getElementById('close');
 let error = document.getElementById('error');
+let mdlc = document.getElementById('modal-color');
 
 let NameErr,
 	PassErr;
@@ -27,15 +28,15 @@ let nastavi = document.getElementById('submit_login');
 		name = document.getElementById('korisnicko_ime').value;
 		password = document.getElementById('sifra').value;
 
-		if(name.length > 5) {
+		if(name.length >= 5) {
 			localStorage.setItem('username', name);
 		}else {
 			error.innerHTML = NameErr;
 			openModal();
 		}
-		if (password.length > 5) {
+		if (password.length >= 5) {
 			localStorage.setItem('password', password);
-			if (name.length > 5) {
+			if (name.length >= 5) {
 				document.location = "checker.html";
 			}
 		}else {
@@ -53,6 +54,10 @@ let nastavi = document.getElementById('submit_login');
             var fr = new FileReader();
             fr.onload = function () {
                 localStorage['foo'] = fr.result;
+                openModal();
+                mdlc.style.color = "#2ecc71";
+                mdlc.innerHTML = "Obavestenje!";
+                error.innerHTML = "| "+" "+" Uspesno ste postavili profilnu sliku!";
             }
             fr.readAsDataURL(files[0]);
         }
@@ -61,6 +66,8 @@ let nastavi = document.getElementById('submit_login');
 function openModal() {
 	modal.style.top = '0px';
 	modal.style.transition = '.4s';
+	mdlc.innerHTML = "Greska!";
+	mdlc.style.color = "#e74c3c";
 }
 
 function closeModal() {

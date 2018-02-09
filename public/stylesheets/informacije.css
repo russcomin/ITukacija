@@ -30,6 +30,44 @@
 	display: inline-block;
 }
 
+.form-box {
+	width: 270px;
+	height: 480px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;	
+	text-align: center;
+}
+
+.form-box img {
+	width: 180px;
+	border-radius: 50%;
+	margin-top: 30px;
+}
+
+.form-box h2 {
+	font-family: Roboto-Bold;
+	font-size: 10px;
+	letter-spacing: 1.6px;
+	margin-top: 15px;
+	text-align: left;
+	margin-left: 40px;
+	color: #a4a4a4;
+}
+
+.form-box p {
+	font-family: Roboto-Regular;
+	font-size: 11px;
+	letter-spacing: 1.4px;
+	line-height: 200%;
+	text-align: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	padding-right: 30px;
+	color: #828282;
+}
+
 .blog-header {
 	width: 367px;
 	height: 93px;

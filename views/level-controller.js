@@ -10,5 +10,4 @@ if (level2 == 'true') {
 
 	let levelCall = document.getElementById('zvanje');
 		levelCall.innerHTML = "SREDNJI";
-
 }

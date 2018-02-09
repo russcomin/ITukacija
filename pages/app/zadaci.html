@@ -147,12 +147,15 @@
 		if (localStorage['passed'] == 'not-clicked') {
 			modal_forward.style.display = 'block';
 			modal_box.style.top = '120px';
-			this.passer = localStorage.setItem('passed', 'clicked');
+		}if (localStorage['passed'] == 'clicked') {
+			modal_forward.style.display = "none";
+			modal_box.style.top = "-400px";
 		}
 		let executer = document.getElementById('take-level-2');
 			executer.addEventListener('click', function() {
 				modal_forward.style.display = "none";
 				modal_box.style.top = "-400px";
+				this.passer = localStorage.setItem('passed', 'clicked');
 			});
 
 	</script>

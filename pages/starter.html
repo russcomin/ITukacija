@@ -15,11 +15,11 @@
 				<p>Kreiranje <br> naloga</p>
 				<p>KORACI</p>
 			</div><!-- end titile -->
-			<div class="nav-box fix">
+			<div class="nav-box fix" id="goto_step_1">
 				<img src="../public/stylesheets/assets/icons/003-locked.svg">
 				<p>Informacije</p>
 			</div><!-- end nav-box -->
-			<div class="nav-box">
+			<div class="nav-box" id="goto_step_2">
 				<img src="../public/stylesheets/assets/icons/002-list.svg">
 				<p>Provera</p>
 			</div><!-- end nav-box -->
@@ -46,5 +46,15 @@
 		</div><!-- end right -->
 	</div><!-- end container -->
 	<script src="../views/activision.js"></script>
+	<script type="text/javascript">
+	let goto_step_1 = document.getElementById('goto_step_1');
+		goto_step_1.addEventListener('click', function() {
+			document.location = "registartion.html";
+		});
+	let goto_step_2 = document.getElementById('goto_step_2');
+		goto_step_2.addEventListener('click', function() {
+			document.location = "checker.html";
+		})		
+	</script>
 </body>
 </html>
